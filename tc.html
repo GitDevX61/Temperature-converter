@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="tc.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">Temperature Converter</h1>
+      <div class="cfk-container">
+        <div class="cfk">Celsius:</div>
+        <input
+          oninput="calculateTemp(event)"
+          type="number"
+          name="celsius"
+          class="js-celsius"
+          placeholder="Enter Temperature"
+        />
+      </div>
+      <div class="cfk-container">
+        <div class="cfk">Fahrenheit:</div>
+        <input
+          oninput="calculateTemp(event)"
+          type="number"
+          name="fahrenheit"
+          class="js-fahrenheit"
+          placeholder="Enter Temperature"
+        />
+      </div>
+      <div class="cfk-container">
+        <div class="cfk">Kelvin:</div>
+        <input
+          oninput="calculateTemp(event)"
+          type="number"
+          name="kelvin"
+          class="js-kelvin"
+          placeholder="Enter Temperature"
+        />
+      </div>
+    </div>
+    <script src="tc.js"></script>
+  </body>
+</html>
